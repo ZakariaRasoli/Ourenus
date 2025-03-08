@@ -138,7 +138,7 @@ const UserBox = ({ data, subLink }) => {
                 fontWeight: 500,
               }}
               xs={12}
-              textAlign={"center"}
+              textAlign={"start"}
             >
               {data?.username}
             </Grid>
