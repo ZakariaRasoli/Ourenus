@@ -117,7 +117,6 @@ const UserBox = ({ data, subLink }) => {
                 color: theme.colors.BWColor[theme.palette.mode],
                 fontSize: "1.2rem",
                 paddingBottom: ".7rem",
-                paddingRight: ".4rem",
                 fontWeight: 500,
               }}
               xs={12}
