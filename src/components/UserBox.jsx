@@ -121,7 +121,7 @@ const UserBox = ({ data, subLink }) => {
                 fontWeight: 500,
               }}
               xs={12}
-              textAlign={"start"}
+              textAlign={"end"}
             >
               {data?.username}
             </Grid>
@@ -153,7 +153,7 @@ const UserBox = ({ data, subLink }) => {
           >
             <Grid
               xs={import.meta.env.VITE_SUPPORT_URL ? 5 : 6}
-              textAlign={"center"}
+              textAlign={"start"}
               item
             >
               <Button
