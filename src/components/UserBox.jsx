@@ -111,7 +111,22 @@ const UserBox = ({ data, subLink }) => {
             paddingBottom={1}
             alignItems={"baseline"}
           >
-                          <Button
+            <Grid
+              item
+              sx={{
+                color: theme.colors.BWColor[theme.palette.mode],
+                fontSize: "1.2rem",
+                paddingBottom: ".7rem",
+                paddingRight: ".4rem",
+                fontWeight: 500,
+              }}
+              xs={12}
+              textAlign={"center"}
+            >
+              {data?.username}
+            </Grid>
+            <Grid>
+              <Button
                 onClick={handleQrModalOpen}
                 sx={{
                   background: theme.colors.glass,
@@ -126,22 +141,6 @@ const UserBox = ({ data, subLink }) => {
               >
                 <QrCodeOutlinedIcon fontSize="small" />
               </Button>
-            
-            <Grid>
-            <Grid
-              item
-              sx={{
-                color: theme.colors.BWColor[theme.palette.mode],
-                fontSize: "1.2rem",
-                paddingBottom: ".7rem",
-                paddingRight: ".4rem",
-                fontWeight: 500,
-              }}
-              xs={12}
-              textAlign={"start"}
-            >
-              {data?.username}
-            </Grid>
             </Grid>
           </Grid>
           <Grid
