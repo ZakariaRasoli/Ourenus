@@ -111,22 +111,7 @@ const UserBox = ({ data, subLink }) => {
             paddingBottom={1}
             alignItems={"baseline"}
           >
-            <Grid
-              item
-              sx={{
-                color: theme.colors.BWColor[theme.palette.mode],
-                fontSize: "1.2rem",
-                paddingBottom: ".7rem",
-                paddingRight: ".4rem",
-                fontWeight: 500,
-              }}
-              xs={12}
-              textAlign={"end"}
-            >
-              {data?.username}
-            </Grid>
-            <Grid>
-              <Button
+                          <Button
                 onClick={handleQrModalOpen}
                 sx={{
                   background: theme.colors.glass,
@@ -141,6 +126,22 @@ const UserBox = ({ data, subLink }) => {
               >
                 <QrCodeOutlinedIcon fontSize="small" />
               </Button>
+            
+            <Grid>
+            <Grid
+              item
+              sx={{
+                color: theme.colors.BWColor[theme.palette.mode],
+                fontSize: "1.2rem",
+                paddingBottom: ".7rem",
+                paddingRight: ".4rem",
+                fontWeight: 500,
+              }}
+              xs={12}
+              textAlign={"center"}
+            >
+              {data?.username}
+            </Grid>
             </Grid>
           </Grid>
           <Grid
@@ -153,7 +154,7 @@ const UserBox = ({ data, subLink }) => {
           >
             <Grid
               xs={import.meta.env.VITE_SUPPORT_URL ? 5 : 6}
-              textAlign={"start"}
+              textAlign={"center"}
               item
             >
               <Button
@@ -173,7 +174,7 @@ const UserBox = ({ data, subLink }) => {
               </Button>
             </Grid>
             {import.meta.env.VITE_SUPPORT_URL && (
-              <Grid item xs={7} textAlign={"center"}>
+              <Grid item xs={7} textAlign={"end"}>
                 <Button
                   onClick={() =>
                     window.open(
