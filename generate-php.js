@@ -73,7 +73,7 @@ export function generateIndexPHP(buildDir) {
         if ($i === 0) continue;
         if (strpos($line, ": ") !== false) {
             list($key, $value) = explode(": ", $line, 2);
-            if (in_array(strtolower($key), ['content-disposition', 'content-type', 'subscription-userinfo', 'profile-update-interval'])) {
+            if (in_array(strtolower($key), ['content-disposition','content-type','subscription-userinfo', 'profile-title','profile-update-interval', 'support-url', 'profile-web-page-url'])) {
                 header("$key: $value");
                 $isValidHeader = true;
             }
