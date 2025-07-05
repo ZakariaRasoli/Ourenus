@@ -170,7 +170,7 @@ function App() {
                       data?.data_limit === null
                         ? formatTraffic(null, t)
                         : formatTraffic(
-                            data?.data_limit - data?.used_traffic,
+                            Number((data?.data_limit - data?.used_traffic).toFixed(2)),
                             t
                           )
                     }
