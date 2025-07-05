@@ -136,7 +136,7 @@ export const formatTraffic = (bytes, t) => {
 
   for (let i = 0; i < thresholds.length; i++) {
     if (bytes < thresholds[i] * 1024) {
-      return `${(bytes / thresholds[i]).toFixed()} ${units[i]}`;
+      return `${(bytes / thresholds[i]).toFixed(2)} ${units[i]}`;
     }
   }
   return `${(bytes / 1024 ** 4).toFixed(2)} ${t("TB")}`;
