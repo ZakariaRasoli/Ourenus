@@ -18,9 +18,9 @@ const UsageBox = ({ type, value, total, remaining }) => {
   const getTypographyGradient = (v) => {
     if (v === Infinity || Number.isNaN(v)) {
       return `linear-gradient(0deg, ${theme.palette.success.main}, ${theme.palette.success.dark})`;
-    } else if (v <= 30) {
+    } else if (v <= 31) {
       return `linear-gradient(0deg, ${theme.palette.success.main}, ${theme.palette.success.dark})`;
-    } else if (v <= 70) {
+    } else if (v <= 72) {
       return `linear-gradient(0deg, ${theme.palette.warning.main}, ${theme.palette.warning.dark})`;
     } else {
       return `linear-gradient(0deg, ${theme.palette.error.main}, ${theme.palette.error.dark})`;
