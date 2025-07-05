@@ -120,7 +120,7 @@ function App() {
         <title>{title}</title>
         <meta
           name="description"
-          content="Powered by https://github.com/MatinDehghanian"
+          content="Powered by ZakariaR"
         />
       </Helmet>
       <Grid container justifyContent={"center"}>
@@ -170,7 +170,7 @@ function App() {
                       data?.data_limit === null
                         ? formatTraffic(null, t)
                         : formatTraffic(
-                            Number((data?.data_limit - data?.used_traffic).toFixed(2)),
+                            data?.data_limit - data?.used_traffic,
                             t
                           )
                     }
